@@ -1,0 +1,23 @@
+{
+    "name": "node-desktop-session-status",
+    "version": "1.0.0",
+    "description": "Returns information regarding whether or not the desktop session is locked.",
+    "main": "index.js",  
+    "typings": "index.d.ts",  
+    "scripts": {
+        "test": "node test.js",
+        "install": "node-gyp rebuild"
+    },
+    "homepage": "https://github.com/RyverApp/node-desktop-session-status",
+    "repository": "git://github.com/RyverApp/node-desktop-session-status.git",
+    "author": {
+        "name": "Ryver, Inc.",
+        "email": "support@ryver.com",
+        "url": "http://ryver.com"
+    },
+    "license": "MIT",    
+    "dependencies": {
+        "bindings": "1.5.0",
+        "nan": "2.18.0"
+    }
+}

@@ -1,0 +1,1 @@
+module.exports = require('bindings')('desktop_session_status');

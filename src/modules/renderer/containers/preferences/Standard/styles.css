@@ -1,0 +1,6 @@
+@import "./config.css";
+
+.root {
+    width: 480px;
+    height: 280px;
+}

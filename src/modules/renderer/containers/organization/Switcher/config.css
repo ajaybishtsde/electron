@@ -1,0 +1,16 @@
+@import "../../../styles/variables.css";
+@import "../../../styles/colors.css";
+
+:root {
+    --switcher-size: 224px;
+    --switcher-size-compact: 72px;
+    --switcher-color: var(--color-grey900);
+    --switcher-text-color: var(--color-white);    
+    --switcher-icon-color: var(--color-white);
+    --switcher-icon-color-hover: var(--color-white);
+    --switcher-active-color: var(--color-pink500);
+    --switcher-badge-color: var(--color-redA700);
+    --switcher-badge-text-color: var(--color-white);
+    --switcher-voice-badge-color: var(--color-tealA400);
+    --switcher-voice-badge-text-color: var(--color-grey900);
+}

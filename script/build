@@ -1,0 +1,105 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const installDevelopmentDependencies = require('./lib/install-development-dependencies');
+installDevelopmentDependencies();
+
+require('colors');
+
+const copyPackageJson = require('./lib/copy-package-json');
+const cleanOutputDirectory = require('./lib/clean-output-directory');
+const cleanIntermediateDirectory = require('./lib/clean-intermediate-directory');
+const cleanMediaDirectory = require('./lib/clean-media-directory');
+const installDependencies = require('./lib/install-dependencies');
+const rebuildDependencies = require('./lib/rebuild-dependencies');
+const runWebpack = require('./lib/run-webpack');
+const packageApplication = require('./lib/package-application');
+const codeSignOnMac = require('./lib/code-sign-on-mac');
+const compressArtifacts = require('./lib/compress-artifacts');
+const createDiskImage = require('./lib/create-disk-image');
+const createWindowsInstaller = require('./lib/create-windows-installer');
+const createDebPackage = require('./lib/create-deb-package');
+const createRpmPackage = require('./lib/create-rpm-package');
+const {buildOutputPath} = require('./config');
+
+const yargs = require('yargs');
+const argv = yargs
+    .describe('arch', 'Architecture to build')
+    .describe('code-sign',  'Code-sign executables (macOS and Windows only)')
+    .describe('create-windows-installer', 'Create installer (Windows only)')
+    .describe('create-disk-image', 'Create .dmg disk image (macOS only)')
+    .describe('create-deb-package', 'Create .deb package (Linux only)')
+    .describe('create-rpm-package', 'Create .rpm package (Linux only)')
+    .describe('compress-artifacts', 'Compress Ryver binaries')    
+    .argv;
+
+function doSetup(options) {
+    cleanIntermediateDirectory();
+    cleanOutputDirectory();    
+    cleanMediaDirectory();                     
+    copyPackageJson(); 
+    installDependencies();
+    runWebpack(true);   
+}
+
+function doRebuild(options) {
+    return rebuildDependencies(options.arch);
+}
+
+function doBuild(options) {           
+    return doRebuild(options)
+        .then(() => packageApplication(options.arch))
+        .then((packagedAppPath) => {            
+            if (process.platform === 'darwin') {
+                if (options.codeSign) {
+                    codeSignOnMac(packagedAppPath);
+                } else {
+                    console.log('Skipping code-signing. Specify the --code-sign option to perform code-signing'.gray);
+                }   
+            }
+            return Promise.resolve(packagedAppPath);
+        })
+        .then((packagedAppPath) => {                 
+            if (process.platform === 'darwin') {                
+                if (options.createDiskImage) {
+                    return createDiskImage(packagedAppPath, options.arch).then(() => packagedAppPath);
+                }               
+            } else if (process.platform === 'win32') {
+                if (options.createWindowsInstaller) {
+                    return createWindowsInstaller(packagedAppPath, options.arch, options.codeSign).then(() => packagedAppPath);
+                } else {
+                    console.log('Skipping creating installer. Specify the --create-windows-installer option to create a Squirrel-based Windows installer. Code-signing was skipped too.'.gray)
+                }                
+            } else if (process.platform === 'linux') {
+                if (options.createDebPackage) {
+                    return createDebPackage(packagedAppPath, options.arch).then(() => packagedAppPath);
+                } else {
+                    console.log('Skipping creating Debian package.  Specify the --create-deb-package option to create a Debian package.');
+                }
+
+                if (options.createRpmPackage) {
+                    return createRpmPackage(packagedAppPath, options.arch).then(() => packagedAppPath);
+                } else {
+                    console.log('Skipping creating RedHat package.  Specify the --create-rpm-package option to create a Redhat package.');
+                }
+            }
+            return Promise.resolve(packagedAppPath);            
+        })
+        .then((packagedAppPath) => {
+            if (options.compressArtifacts) {
+                return compressArtifacts(packagedAppPath, options.arch).then(() => packagedAppPath);
+            }   
+        });
+}
+
+if (process.platform === 'win32' && !argv.arch) {
+    doSetup(argv);
+    doBuild(Object.assign({}, argv, {arch: 'ia32'}))
+        .then(() => doBuild(Object.assign({}, argv, {arch: 'x64'}))) // build x64 last as that is the most common dev setup
+        .catch((err) => console.error('An error occurred=', err));
+} else {
+    doSetup(argv);
+    doBuild(Object.assign({}, argv, {arch: argv.arch || process.arch}))
+        .catch((err) => console.error('An error occurred=', err));
+}

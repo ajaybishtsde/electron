@@ -1,0 +1,462 @@
+{
+	"type": "object",
+	"properties": {
+		"$schema": {
+			"type": "string"
+		},
+		"${0} requires a username and password.": {
+			"type": "string",
+			"minLength": 1,
+			"pattern": "(?=.*?\\$\\{0\\})"
+		},
+		"&File": {
+			"type": "string",
+			"minLength": 1
+		},
+		"&Help": {
+			"type": "string",
+			"minLength": 1
+		},
+		"&Next Organization": {
+			"type": "string",
+			"minLength": 1
+		},
+		"&Preferences": {
+			"type": "string",
+			"minLength": 1
+		},
+		"&Prev Organization": {
+			"type": "string",
+			"minLength": 1
+		},
+		"About": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Add Organization": {
+			"type": "string",
+			"minLength": 1
+		},
+		"An un-recoverable connection error occurred on one or more organizations and you were disconnected.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"An update to the application has been installed.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Application Window": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Are you sure you want to reset the app?": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Authentication Required": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Aw, Snap!": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Cancel": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Check For Updates": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Clear Cache": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Clear Cookies": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Close": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Close button should hide Ryver": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Close button should minimize Ryver to the tray": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Continuously": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Copy": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Could not open the organization.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Cut": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Developer": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Disable spellcheck while typing": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Do not use proxy server (restart required)": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Downloading Update": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Edit": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Entire Screen": {
+			"type": "string",
+			"minLength": 1
+		},
+		"For One Second": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Hide": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Hide Organization Switcher": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Hide Others": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Ignore": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Initials": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Initials cannot be empty": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Login": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Minimize": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Mute notification sounds from all organizations": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Never": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Ok": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Open Ryver automatically after you login to the computer": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Organization Name": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Organization cannot be empty": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Organization cannot contain non-standard characters.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Organization does not exist.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Password": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Paste": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Preferences...": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Quit": {
+			"type": "string",
+			"minLength": 1
+		},
+		"RESTART": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Redo": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Reload": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Remove": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Reset": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Reset App...": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Resetting the app will restore it to its default state.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Restart To Update": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Restore Zoom": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Retry?": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Ryver": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Save": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Select All": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Settings": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Share": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Share Screen": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Sign in to &Organization": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Something went wrong loading this organization.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Something went wrong trying to open the organization.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"There may be an issue with our servers.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"There seems to be an issue with your network connection.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Toggle Developer Tools": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Toggle Full Screen": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Troubleshooting": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Undo": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Unsupported Settings": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Up To Date": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Use Phone View": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Username": {
+			"type": "string",
+			"minLength": 1
+		},
+		"View": {
+			"type": "string",
+			"minLength": 1
+		},
+		"When there is a notification, bounce the dock icon": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Window": {
+			"type": "string",
+			"minLength": 1
+		},
+		"You are already running the latest version of the application.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"You were disconnected from one or more organizations.": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Zoom": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Zoom In": {
+			"type": "string",
+			"minLength": 1
+		},
+		"Zoom Out": {
+			"type": "string",
+			"minLength": 1
+		},
+		"add organization...": {
+			"type": "string",
+			"minLength": 1
+		}
+	},
+	"required": [
+		"${0} requires a username and password.",
+		"&File",
+		"&Help",
+		"&Next Organization",
+		"&Preferences",
+		"&Prev Organization",
+		"About",
+		"Add Organization",
+		"An un-recoverable connection error occurred on one or more organizations and you were disconnected.",
+		"An update to the application has been installed.",
+		"Application Window",
+		"Are you sure you want to reset the app?",
+		"Authentication Required",
+		"Aw, Snap!",
+		"Cancel",
+		"Check For Updates",
+		"Clear Cache",
+		"Clear Cookies",
+		"Close",
+		"Close button should hide Ryver",
+		"Close button should minimize Ryver to the tray",
+		"Continuously",
+		"Copy",
+		"Could not open the organization.",
+		"Cut",
+		"Developer",
+		"Disable spellcheck while typing",
+		"Do not use proxy server (restart required)",
+		"Downloading Update",
+		"Edit",
+		"Entire Screen",
+		"For One Second",
+		"Hide",
+		"Hide Organization Switcher",
+		"Hide Others",
+		"Ignore",
+		"Initials",
+		"Initials cannot be empty",
+		"Login",
+		"Minimize",
+		"Mute notification sounds from all organizations",
+		"Never",
+		"Ok",
+		"Open Ryver automatically after you login to the computer",
+		"Organization Name",
+		"Organization cannot be empty",
+		"Organization cannot contain non-standard characters.",
+		"Organization does not exist.",
+		"Password",
+		"Paste",
+		"Preferences...",
+		"Quit",
+		"RESTART",
+		"Redo",
+		"Reload",
+		"Remove",
+		"Reset",
+		"Reset App...",
+		"Resetting the app will restore it to its default state.",
+		"Restart To Update",
+		"Restore Zoom",
+		"Retry?",
+		"Ryver",
+		"Save",
+		"Select All",
+		"Settings",
+		"Share",
+		"Share Screen",
+		"Sign in to &Organization",
+		"Something went wrong loading this organization.",
+		"Something went wrong trying to open the organization.",
+		"There may be an issue with our servers.",
+		"There seems to be an issue with your network connection.",
+		"Toggle Developer Tools",
+		"Toggle Full Screen",
+		"Troubleshooting",
+		"Undo",
+		"Unsupported Settings",
+		"Up To Date",
+		"Use Phone View",
+		"Username",
+		"View",
+		"When there is a notification, bounce the dock icon",
+		"Window",
+		"You are already running the latest version of the application.",
+		"You were disconnected from one or more organizations.",
+		"Zoom",
+		"Zoom In",
+		"Zoom Out",
+		"add organization..."
+	],
+	"additionalProperties": false
+}

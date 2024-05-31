@@ -1,0 +1,77 @@
+#!/usr/bin/env node
+
+'use strict';
+
+require('colors');
+
+const cleanOutputDirectory = require('./lib/clean-output-directory');
+const cleanMediaDirectory = require('./lib/clean-media-directory');
+const packageApplication = require('./lib/package-application');
+const codeSignOnMac = require('./lib/code-sign-on-mac');
+const compressArtifacts = require('./lib/compress-artifacts');
+const createDiskImage = require('./lib/create-disk-image');
+const createWindowsInstaller = require('./lib/create-windows-installer');
+const createDebPackage = require('./lib/create-deb-package');
+const createRpmPackage = require('./lib/create-rpm-package');
+const {buildOutputPath} = require('./config');
+
+const yargs = require('yargs');
+const argv = yargs
+    .describe('arch', 'Architecture to build')
+    .describe('code-sign',  'Code-sign executables (macOS and Windows only)')
+    .describe('create-windows-installer', 'Create installer (Windows only)')
+    .describe('create-disk-image', 'Create .dmg disk image (macOS only)')
+    .describe('create-deb-package', 'Create .deb package (Linux only)')
+    .describe('create-rpm-package', 'Create .rpm package (Linux only)')
+    .describe('compress-artifacts', 'Compress Ryver binaries')    
+    .argv;
+
+function doBuild(options) {           
+    cleanOutputDirectory();
+    cleanMediaDirectory();
+    return packageApplication(options.arch)
+        .then((packagedAppPath) => {            
+            if (process.platform === 'darwin') {
+                if (options.codeSign) {
+                    codeSignOnMac(packagedAppPath);
+                } else {
+                    console.log('Skipping code-signing. Specify the --code-sign option to perform code-signing'.gray);
+                }   
+            }
+            return Promise.resolve(packagedAppPath);
+        })
+        .then((packagedAppPath) => {                 
+            if (process.platform === 'darwin') {                
+                if (options.createDiskImage) {
+                    return createDiskImage(packagedAppPath, options.arch).then(() => packagedAppPath);
+                }               
+            } else if (process.platform === 'win32') {
+                if (options.createWindowsInstaller) {
+                    return createWindowsInstaller(packagedAppPath, options.arch, options.codeSign).then(() => packagedAppPath);
+                } else {
+                    console.log('Skipping creating installer. Specify the --create-windows-installer option to create a Squirrel-based Windows installer. Code-signing was skipped too.'.gray)
+                }                
+            } else if (process.platform === 'linux') {
+                if (options.createDebPackage) {
+                    return createDebPackage(packagedAppPath, options.arch).then(() => packagedAppPath);
+                } else {
+                    console.log('Skipping creating Debian package.  Specify the --create-deb-package option to create a Debian package.');
+                }
+
+                if (options.createRpmPackage) {
+                    return createRpmPackage(packagedAppPath, options.arch).then(() => packagedAppPath);
+                } else {
+                    console.log('Skipping creating RedHat package.  Specify the --create-rpm-package option to create a Redhat package.');
+                }
+            }
+            return Promise.resolve(packagedAppPath);            
+        })
+        .then((packagedAppPath) => {
+            if (options.compressArtifacts) {
+                return compressArtifacts(packagedAppPath, options.arch).then(() => packagedAppPath);
+            }   
+        });
+}
+
+doBuild(Object.assign({}, argv, {arch: argv.arch || process.arch}))
+    .catch((err) => console.error('An error occurred=', err));

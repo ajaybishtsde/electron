@@ -1,0 +1,14 @@
+@import "./config.css";
+
+.root {
+    
+}
+
+.dialogContent {
+    width: 400px;
+}
+
+.barIcon {
+    /* @important mui */
+    color: white;
+}

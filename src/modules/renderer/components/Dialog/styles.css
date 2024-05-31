@@ -1,0 +1,73 @@
+.root:not(.sizeA) {
+    padding-top: 0 !important;
+}
+
+.body {
+    position: relative;
+}
+
+.root .header {
+    padding: 16px !important;
+}
+
+.root .body {
+    padding: 16px !important;
+}
+
+.hasHeader .body {
+    padding: 0 16px 16px 16px !important;
+}
+
+.zeroPad .header {
+    padding: 0 !important;
+}
+
+.zeroPad .body {
+    padding: 0 !important;
+}
+
+.sizeW .content,
+.sizeT .content {
+    width: 90vw;
+    margin-top: calc(5vh - 64px) !important;
+}
+
+.sizeF .content {
+    width: 100vw;
+    margin-top: calc(0vh - 64px) !important;
+}
+
+.sizeW .content {
+    max-width: 1024px !important;
+}
+
+.sizeT .content {
+    margin-top: calc(5vh - 64px) !important;
+}
+
+.sizeW .paper,
+.sizeT .paper,
+.sizeF .paper {
+    display: flex;
+    flex-direction: column;
+    max-width: auto !important;
+}
+
+.sizeW .paper,
+.sizeT .paper {
+    height: 90vh;
+}
+
+.sizeF .paper {
+    height: 100vh;
+}
+
+.sizeW .body,
+.sizeT .body,
+.sizeF .body {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}

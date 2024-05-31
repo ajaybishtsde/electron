@@ -1,0 +1,13 @@
+@import "../../styles/variables.css";
+
+:root {
+    --choose-capture-source-preview-w: 200px;
+    --choose-capture-source-preview-h: 125px;
+    --choose-capture-source-card-p: 8px;
+    --choose-capture-source-card-m: 16px;
+    --choose-capture-source-card-b: 4px;    
+    --choose-capture-source-card-w: calc(var(--choose-capture-source-preview-w) + 2 * var(--choose-capture-source-card-p) + 2 * var(--choose-capture-source-card-b));
+    --choose-capture-source-background-color: var(--color-grey100);
+    --choose-capture-source-edge-color: var(--color-grey300);
+    --choose-capture-source-selected-color: var(--color-lightBlue500);    
+}

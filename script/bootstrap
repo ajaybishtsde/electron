@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const installDevelopmentDependencies = require('./lib/install-development-dependencies');
+installDevelopmentDependencies();
+
+const copyPackageJson = require('./lib/copy-package-json');
+const cleanIntermediateDirectory = require('./lib/clean-intermediate-directory');
+const installDependencies = require('./lib/install-dependencies');
+const rebuildDependencies = require('./lib/rebuild-dependencies');
+const runWebpack = require('./lib/run-webpack');
+
+cleanIntermediateDirectory();
+copyPackageJson();
+installDependencies();
+rebuildDependencies(process.arch).then(() => {
+    
+});

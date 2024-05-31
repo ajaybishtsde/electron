@@ -1,0 +1,191 @@
+@import "./config.css";
+
+.root {    
+    /* @important mui */
+    z-index: 200;    
+    display: none;        
+    flex-direction: column;
+    width: var(--switcher-size);    
+    background: var(--switcher-color);    
+}
+
+.root.isCompact {
+    /* @important mui */
+    width: var(--switcher-size-compact);
+}
+
+.root.isShown {
+    /* @important mui */
+    display: flex;
+}
+
+.action {
+    /* @important mui */
+    flex-grow: 0;
+    flex-shrink: 0;  
+    margin: 0;
+    color: var(--switcher-icon-color);
+}
+
+.icon {
+    /* @important mui */
+    width: 24px;
+    height: 24px;
+}
+
+.action:hover {
+    /* @important mui */
+    color: var(--switcher-icon-color-hover);
+}
+
+.header {    
+    height: 48px;    
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;        
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.headerText {
+    padding-left: 8px;    
+    color: var(--switcher-text-color);
+    flex-grow: 1;
+}
+
+.wrapper {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0 0;
+}
+
+.button {
+    /* @important mui */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 56px;
+    padding: 0 0 0 11px;
+    cursor: pointer;
+}
+
+.buttonActive {
+
+}
+
+.buttonActive:after {
+    content: "";
+    position: absolute;
+    top: 3px; 
+    left: 0;
+    bottom: 3px;
+    width: 4px;
+    background-color: var(--switcher-active-color);
+}
+
+.buttonAvatarContainer {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.buttonAvatar {
+    /* @important mui */
+    width: 50px;
+    height: 50px;
+}
+
+.buttonName {
+    flex-grow: 1;
+    text-align: left;
+    color: var(--switcher-text-color);    
+    font-size: var(--font-size-l);
+    margin: 0 8px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: none;
+}
+
+.buttonBadge {
+    position: absolute;
+    bottom: -5px;
+    right: -3px;
+    border: solid 2px var(--switcher-color);
+    background: var(--switcher-badge-color);
+    color: var(--switcher-badge-text-color);
+    font-size: var(--font-size-s);
+    font-weight: bold;
+    border-radius: 5px;
+    min-width: 20px;
+    height: 20px;
+    line-height: 16px;
+    text-align: center;    
+}
+
+.buttonBadgeAsterisk {    
+    position: relative;
+    top: 2px;    
+}
+
+.buttonVoiceBadge {
+    position: absolute;
+    bottom: -5px;
+    left: -3px;
+    border: solid 2px var(--switcher-color);
+    background: var(--switcher-voice-badge-color);
+    color: var(--switcher-voice-badge-text-color);
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.buttonVoiceBadgeIcon {
+    /* @important mui */
+    color: inherit;
+    width: 16px;
+    height: 16px;
+}
+
+.buttonCreate {
+    opacity: 0.5;
+    transition-property: opacity;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--animation-curve-default);
+}
+
+.buttonCreate:hover {
+    opacity: 1.0;
+}
+
+.buttonCreate .buttonAvatar {
+    background: transparent;
+    border: solid 1px var(--switcher-icon-color);    
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 48px;
+}
+
+.root.isCompact .buttonName {
+    display: none;
+}
+
+.root.isCompact .footer {
+    justify-content: center;
+}
+
+.menuRemove {
+    /* @important mui */
+    color: var(--color-red500);
+}

@@ -1,0 +1,272 @@
+msgid ""
+msgstr "Content-Type: text/plain;\n"
+
+msgid "${0} requires a username and password."
+msgstr "${0} requires a username and password."
+
+msgid "&File"
+msgstr "&File"
+
+msgid "&Help"
+msgstr "&Help"
+
+msgid "&Next Organization"
+msgstr "&Next Organization"
+
+msgid "&Preferences"
+msgstr "&Preferences"
+
+msgid "&Prev Organization"
+msgstr "&Prev Organization"
+
+msgid "About"
+msgstr "About"
+
+msgid "Add Organization"
+msgstr "Add Organization"
+
+msgid "An un-recoverable connection error occurred on one or more organizations and you were disconnected."
+msgstr "An un-recoverable connection error occurred on one or more organizations and you were disconnected."
+
+msgid "An update to the application has been installed."
+msgstr "An update to the application has been installed."
+
+msgid "Application Window"
+msgstr "Application Window"
+
+msgid "Are you sure you want to reset the app?"
+msgstr "Are you sure you want to reset the app?"
+
+msgid "Authentication Required"
+msgstr "Authentication Required"
+
+msgid "Aw, Snap!"
+msgstr "Aw, Snap!"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Check For Updates"
+msgstr "Check For Updates"
+
+msgid "Clear Cache"
+msgstr "Clear Cache"
+
+msgid "Clear Cookies"
+msgstr "Clear Cookies"
+
+msgid "Close"
+msgstr "Close"
+
+msgid "Close button should hide Ryver"
+msgstr "Close button should hide Ryver"
+
+msgid "Close button should minimize Ryver to the tray"
+msgstr "Close button should minimize Ryver to the tray"
+
+msgid "Continuously"
+msgstr "Continuously"
+
+msgid "Copy"
+msgstr "Copy"
+
+msgid "Could not open the organization."
+msgstr "Could not open the organization."
+
+msgid "Cut"
+msgstr "Cut"
+
+msgid "Developer"
+msgstr "Developer"
+
+msgid "Disable spellcheck while typing"
+msgstr "Disable spellcheck while typing"
+
+msgid "Do not use proxy server (restart required)"
+msgstr "Do not use proxy server (restart required)"
+
+msgid "Downloading Update"
+msgstr "Downloading Update"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Entire Screen"
+msgstr "Entire Screen"
+
+msgid "For One Second"
+msgstr "For One Second"
+
+msgid "Hide"
+msgstr "Hide"
+
+msgid "Hide Organization Switcher"
+msgstr "Hide Organization Switcher"
+
+msgid "Hide Others"
+msgstr "Hide Others"
+
+msgid "Ignore"
+msgstr "Ignore"
+
+msgid "Initials"
+msgstr "Initials"
+
+msgid "Initials cannot be empty"
+msgstr "Initials cannot be empty"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Minimize"
+msgstr "Minimize"
+
+msgid "Mute notification sounds from all organizations"
+msgstr "Mute notification sounds from all organizations"
+
+msgid "Never"
+msgstr "Never"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "Open Ryver automatically after you login to the computer"
+msgstr "Open Ryver automatically after you login to the computer"
+
+msgid "Organization Name"
+msgstr "Organization Name"
+
+msgid "Organization cannot be empty"
+msgstr "Organization cannot be empty"
+
+msgid "Organization cannot contain non-standard characters."
+msgstr "Organization cannot contain non-standard characters."
+
+msgid "Organization does not exist."
+msgstr "Organization does not exist."
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Paste"
+msgstr "Paste"
+
+msgid "Preferences..."
+msgstr "Preferences..."
+
+msgid "Quit"
+msgstr "Quit"
+
+msgid "RESTART"
+msgstr "RESTART"
+
+msgid "Redo"
+msgstr "Redo"
+
+msgid "Reload"
+msgstr "Reload"
+
+msgid "Remove"
+msgstr "Remove"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Reset App..."
+msgstr "Reset App..."
+
+msgid "Resetting the app will restore it to its default state."
+msgstr "Resetting the app will restore it to its default state."
+
+msgid "Restart To Update"
+msgstr "Restart To Update"
+
+msgid "Restore Zoom"
+msgstr "Restore Zoom"
+
+msgid "Retry?"
+msgstr "Retry?"
+
+msgid "Ryver"
+msgstr "Ryver"
+
+msgid "Save"
+msgstr "Save"
+
+msgid "Select All"
+msgstr "Select All"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgid "Share"
+msgstr "Share"
+
+msgid "Share Screen"
+msgstr "Share Screen"
+
+msgid "Sign in to &Organization"
+msgstr "Sign in to &Organization"
+
+msgid "Something went wrong loading this organization."
+msgstr "Something went wrong loading this organization."
+
+msgid "Something went wrong trying to open the organization."
+msgstr "Something went wrong trying to open the organization."
+
+msgid "There may be an issue with our servers."
+msgstr "There may be an issue with our servers."
+
+msgid "There seems to be an issue with your network connection."
+msgstr "There seems to be an issue with your network connection."
+
+msgid "Toggle Developer Tools"
+msgstr "Toggle Developer Tools"
+
+msgid "Toggle Full Screen"
+msgstr "Toggle Full Screen"
+
+msgid "Troubleshooting"
+msgstr "Troubleshooting"
+
+msgid "Undo"
+msgstr "Undo"
+
+msgid "Unsupported Settings"
+msgstr "Unsupported Settings"
+
+msgid "Up To Date"
+msgstr "Up To Date"
+
+msgid "Use Phone View"
+msgstr "Use Phone View"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "View"
+msgstr "View"
+
+msgid "When there is a notification, bounce the dock icon"
+msgstr "When there is a notification, bounce the dock icon"
+
+msgid "Window"
+msgstr "Window"
+
+msgid "You are already running the latest version of the application."
+msgstr "You are already running the latest version of the application."
+
+msgid "You were disconnected from one or more organizations."
+msgstr "You were disconnected from one or more organizations."
+
+msgid "Zoom"
+msgstr "Zoom"
+
+msgid "Zoom In"
+msgstr "Zoom In"
+
+msgid "Zoom Out"
+msgstr "Zoom Out"
+
+msgid "add organization..."
+msgstr "add organization..."

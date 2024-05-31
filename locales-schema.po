@@ -1,0 +1,272 @@
+msgid ""
+msgstr "Content-Type: text/plain;\n"
+
+msgid "${0} requires a username and password."
+msgstr ""
+
+msgid "&File"
+msgstr ""
+
+msgid "&Help"
+msgstr ""
+
+msgid "&Next Organization"
+msgstr ""
+
+msgid "&Preferences"
+msgstr ""
+
+msgid "&Prev Organization"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Add Organization"
+msgstr ""
+
+msgid "An un-recoverable connection error occurred on one or more organizations and you were disconnected."
+msgstr ""
+
+msgid "An update to the application has been installed."
+msgstr ""
+
+msgid "Application Window"
+msgstr ""
+
+msgid "Are you sure you want to reset the app?"
+msgstr ""
+
+msgid "Authentication Required"
+msgstr ""
+
+msgid "Aw, Snap!"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Check For Updates"
+msgstr ""
+
+msgid "Clear Cache"
+msgstr ""
+
+msgid "Clear Cookies"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Close button should hide Ryver"
+msgstr ""
+
+msgid "Close button should minimize Ryver to the tray"
+msgstr ""
+
+msgid "Continuously"
+msgstr ""
+
+msgid "Copy"
+msgstr ""
+
+msgid "Could not open the organization."
+msgstr ""
+
+msgid "Cut"
+msgstr ""
+
+msgid "Developer"
+msgstr ""
+
+msgid "Disable spellcheck while typing"
+msgstr ""
+
+msgid "Do not use proxy server (restart required)"
+msgstr ""
+
+msgid "Downloading Update"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Entire Screen"
+msgstr ""
+
+msgid "For One Second"
+msgstr ""
+
+msgid "Hide"
+msgstr ""
+
+msgid "Hide Organization Switcher"
+msgstr ""
+
+msgid "Hide Others"
+msgstr ""
+
+msgid "Ignore"
+msgstr ""
+
+msgid "Initials"
+msgstr ""
+
+msgid "Initials cannot be empty"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Minimize"
+msgstr ""
+
+msgid "Mute notification sounds from all organizations"
+msgstr ""
+
+msgid "Never"
+msgstr ""
+
+msgid "Ok"
+msgstr ""
+
+msgid "Open Ryver automatically after you login to the computer"
+msgstr ""
+
+msgid "Organization Name"
+msgstr ""
+
+msgid "Organization cannot be empty"
+msgstr ""
+
+msgid "Organization cannot contain non-standard characters."
+msgstr ""
+
+msgid "Organization does not exist."
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Paste"
+msgstr ""
+
+msgid "Preferences..."
+msgstr ""
+
+msgid "Quit"
+msgstr ""
+
+msgid "RESTART"
+msgstr ""
+
+msgid "Redo"
+msgstr ""
+
+msgid "Reload"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Reset App..."
+msgstr ""
+
+msgid "Resetting the app will restore it to its default state."
+msgstr ""
+
+msgid "Restart To Update"
+msgstr ""
+
+msgid "Restore Zoom"
+msgstr ""
+
+msgid "Retry?"
+msgstr ""
+
+msgid "Ryver"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Select All"
+msgstr ""
+
+msgid "Settings"
+msgstr ""
+
+msgid "Share"
+msgstr ""
+
+msgid "Share Screen"
+msgstr ""
+
+msgid "Sign in to &Organization"
+msgstr ""
+
+msgid "Something went wrong loading this organization."
+msgstr ""
+
+msgid "Something went wrong trying to open the organization."
+msgstr ""
+
+msgid "There may be an issue with our servers."
+msgstr ""
+
+msgid "There seems to be an issue with your network connection."
+msgstr ""
+
+msgid "Toggle Developer Tools"
+msgstr ""
+
+msgid "Toggle Full Screen"
+msgstr ""
+
+msgid "Troubleshooting"
+msgstr ""
+
+msgid "Undo"
+msgstr ""
+
+msgid "Unsupported Settings"
+msgstr ""
+
+msgid "Up To Date"
+msgstr ""
+
+msgid "Use Phone View"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "View"
+msgstr ""
+
+msgid "When there is a notification, bounce the dock icon"
+msgstr ""
+
+msgid "Window"
+msgstr ""
+
+msgid "You are already running the latest version of the application."
+msgstr ""
+
+msgid "You were disconnected from one or more organizations."
+msgstr ""
+
+msgid "Zoom"
+msgstr ""
+
+msgid "Zoom In"
+msgstr ""
+
+msgid "Zoom Out"
+msgstr ""
+
+msgid "add organization..."
+msgstr ""

@@ -1,0 +1,74 @@
+@import "./config.css";
+
+.root {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--color-blueGrey900);
+    z-index: 50;
+}
+
+.root.isSelected {    
+    z-index: 100;    
+}
+
+.webview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: #263238; */
+    background: #f2f5fa;
+    z-index: 50;
+}
+
+.error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background: #263238; */
+    background: #f2f5fa;
+    z-index: 100;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+}
+
+.errorBox {
+    width: 520px;    
+    color: var(--color-text);
+    background: var(--color-canvas);  
+    box-shadow: var(--shadow-2p);  
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+}
+
+.errorContent {
+    width: 100%;
+}
+
+.errorActions {
+    margin: 48px 0 0 0;
+}
+
+.errorSubject,
+.errorBody,
+.errorCode {
+    display: block;
+    margin: 0 0 16px 0;    
+}
+
+.errorCode {
+    color: var(--color-disabled);
+}
+
+.errorSubject {
+    font-weight: bold;
+}

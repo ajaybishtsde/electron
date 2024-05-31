@@ -1,0 +1,50 @@
+@import "./config.css";
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 420px;
+    height: 240px;
+}
+
+.side {
+    width: 92px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    /* @important mui */
+    margin: 6px 16px 0 0;
+    width: 50px;
+    height: 50px;
+}
+
+.form {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.row {
+    /* @important mui */
+    margin: 0 0 4px 0;
+}
+
+.rowColor {
+    /* @important mui */
+    margin: 4px 0 0 0;
+}
+
+.errorPending {
+    margin: 0 0 4px 0;
+}
+
+.error {
+    position: relative;
+    top: -8px;
+    color: var(--color-red500);
+    font-size: var(--font-size-s);
+    margin: 0 0 4px 0;
+}

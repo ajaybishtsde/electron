@@ -1,0 +1,64 @@
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "modules": false,
+            "targets": {
+                "node": "7.9.0"
+            }
+        }],
+        "@babel/preset-react",
+        "@babel/preset-typescript"
+    ],
+    "plugins": [
+        ["@babel/plugin-transform-runtime"],
+        ["@babel/plugin-syntax-dynamic-import"], 
+        ["auto-import", { 
+            "declarations": [{
+                "members": ["LOG_INFO", "LOG_WARN", "LOG_ERROR", "LOG_DEBUG", "LOG_NS"],
+                "path": "@log"
+            }]
+        }],
+        ["module-resolver", {
+            "alias": {
+                "@components": "./src/components",
+                "@modules": "./src/modules",
+                "@log": "./src/log"
+            }
+        }],
+        ["i18n-tag-translate", {
+            "globalImport": true
+        }]
+    ],
+    "env": {
+        "dev-server": {
+            "plugins": [
+                "react-hot-loader/babel"
+            ]
+        },
+        "test": {
+            "presets": [
+                ["@babel/preset-env", {
+                    "modules": false,
+                    "loose": true
+                }]
+            ]
+        },
+        "translation-group": {
+            "plugins": [
+                ["minify-replace", {
+                    "replacements": [{
+                        "identifierName": "i18n",
+                        "replacement": {
+                            "type": "identifier",
+                            "value": "i18n(__translationGroup)"
+                        }
+                    }]
+                }],
+                ["i18n-tag-translate", {
+                    "globalImport": true,
+                    "groupDir": "./src"
+                }]
+            ]
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "../../styles/variables.css";
+
+.root {    
+    min-height: 72px;
+}
+
+.root.hasLabel .wrapper {
+    margin-top: 16px;
+}
+
+.swatch {
+    position: relative;
+    border: solid 2px transparent;
+    padding: 2px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.swatchWrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.swatchCheck {
+    /* @important mui */
+    width: 16px;
+    height: 16px;
+    color: var(--color-white);
+}
